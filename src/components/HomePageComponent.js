@@ -8,7 +8,8 @@ function HomePageComponent(){
         <>
         <NavComponent />
         <section className="hero_section">
-            <h1>Welcome to my art</h1>
+           <h1> Welcome to my <br></br>
+               <span>art</span></h1>
             <button>Check-out</button>
         </section>
         
