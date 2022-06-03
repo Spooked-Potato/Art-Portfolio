@@ -1,29 +1,31 @@
 @import url("https://fonts.google.com/specimen/Montserrat");
 
-:root{
-  --main-bg-color: #FEFDFA;
-  --second-bg-color: 	#353935;
-  --subcolor-bg-color: #DC143C;
+:root {
+  --main-bg-color: #fefdfa;
+  --second-bg-color: #353935;
+  --subcolor-bg-color: #dc143c;
 }
 
-*, ::before, ::after{
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--main-bg-color);
+  font-family: "Montserrat", sans-serif;
+  /* background-color: var(--main-bg-color); */
 }
-html body{
+html body {
   height: 100%;
   width: 100%;
 }
 
-nav{
+nav {
   height: 13vh;
   width: 100%;
 }
 
-nav ul{
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +36,7 @@ nav ul{
   box-shadow: 2px 2px 10px;
 }
 
-nav ul li{
-  
+nav ul li {
   padding: 20px;
   text-transform: uppercase;
   font-size: 16px;
@@ -44,16 +45,17 @@ nav ul li{
   letter-spacing: 5px;
 }
 
-nav ul li:hover{
+nav ul li:hover {
   color: var(--subcolor-bg-color);
+    transform: scale(110%);
   text-decoration: underline 5px var(--subcolor-bg-color);
 }
 
-footer{
+footer {
   bottom: 0;
 }
 
-footer ul{
+footer ul {
   height: 100px;
   justify-content: center;
   display: flex;
@@ -64,7 +66,7 @@ footer ul{
   width: 100%;
 }
 
-footer ul li{
+footer ul li {
   background-color: unset;
   padding: 20px;
   color: var(--main-bg-color);
@@ -72,26 +74,25 @@ footer ul li{
   font-size: 16px;
   font-weight: 400;
   line-height: 10px;
-  
 }
 
-.hero_section{
+.hero_section {
   background: url(./Assets/img/heroimage.jpg);
   background-size: cover;
-  background-position:center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 70vh;
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    filter: saturate(150%);
-    color: var(--main-bg-color);
-    align-content: flex-start;
-    justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  filter: saturate(150%);
+  color: var(--main-bg-color);
+  align-content: flex-start;
+  justify-content: center;
 }
 
-.hero_section h1{
+.hero_section h1 {
   background: unset;
   font-size: 60px;
   font-weight: 200;
@@ -100,16 +101,15 @@ footer ul li{
   text-transform: uppercase;
 }
 
-.hero_section h1 span{
+.hero_section h1 span {
   font-weight: 700;
   font-style: normal;
   font-size: 65px;
   background: unset;
   text-transform: uppercase;
-
 }
 
-.hero_section button{
+.hero_section button {
   width: 10%;
   border-radius: 10px;
   border: 5px solid var(--subcolor-bg-color);
@@ -121,7 +121,7 @@ footer ul li{
   padding: 5px;
 }
 
-.about_me{
+.about_me {
   width: 100%;
   height: 60vh;
   display: flex;
@@ -129,7 +129,7 @@ footer ul li{
   align-items: center;
 }
 
-.about_me_container{
+.about_me_container {
   width: 80%;
   height: 80%;
   display: flex;
@@ -137,7 +137,7 @@ footer ul li{
   align-items: center;
 }
 
-.box{
+.box {
   width: 50%;
   height: 100%;
   display: flex;
@@ -145,19 +145,47 @@ footer ul li{
   align-items: center;
 }
 
-.about_me_container .box img{
+.about_me_container .box img {
   height: 80%;
   width: 80%;
 }
 
-.about_me_container .box p{
+.about_me_container .box p {
   font-size: 16px;
   text-align: justify;
   height: 70%;
   width: 90%;
-
 }
 
-.about_me_container .box p span{
+.about_me_container .box p span {
   font-weight: 900;
+}
+
+
+.form-section{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-section form{
+  height: 80vh;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+form .details-contact{
+  display: flex;
+  flex-direction: column;
+}
+
+form .details-contact .label-contact,
+form .details-contact .textarea-contact{
+  padding: 10px;
 }
