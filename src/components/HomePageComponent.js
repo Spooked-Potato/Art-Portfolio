@@ -8,6 +8,8 @@ function HomePageComponent(){
     return(
         <>
         <NavComponent />
+        <div>
+
         <section className="hero_section">
            <h1> Welcome to my <br></br>
                <span>art</span></h1>
@@ -25,6 +27,7 @@ function HomePageComponent(){
                 </div>
             </div>
         </section>
+        </div>
         
         <FooterComponent/>
         </>

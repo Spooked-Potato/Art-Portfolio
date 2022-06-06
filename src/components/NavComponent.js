@@ -14,6 +14,9 @@ function NavComponent() {
                 <li>
                     contact-me
                 </li>
+                <li>
+                    about-me
+                </li>
             </ul>
         </nav>
         </>

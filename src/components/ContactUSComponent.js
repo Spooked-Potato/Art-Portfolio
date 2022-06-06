@@ -46,8 +46,7 @@ function ContactUSComponent() {
 
           <button type="button">SEND</button>
         </form>
-      </section>
-      <FooterComponent />
+      </section>    
     </>
   );
 }
