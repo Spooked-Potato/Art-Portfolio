@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "../App.css";
 import NavComponent from "./NavComponent";
-import FooterComponent from "./FooterComponent";
 
-function ContactUSComponent() {
+
+
+
+export default function ContactUSComponent() {
+  const [aberto, setAberto] = useState(false);
+
   return (
     <>
       <NavComponent />
@@ -44,11 +48,23 @@ function ContactUSComponent() {
             ></textarea>
           </div>
 
-          <button type="button">SEND</button>
+          <button type="button" onClick={() => setAberto(true)} >SEND</button>
         </form>
       </section>    
+
+      {aberto ? (
+        <section className="contact_alert" id="contact_alert">
+          <div className="contact_box">
+            <h1 className="text-2xl">Your message was sent successfully</h1>
+            <p className="mb-2 mt-4">Click "here" to go back</p>
+            <button className="mt-4" onClick={() => setAberto(false)}>
+              Here
+            </button>
+          </div>
+        </section>
+      ) : null}
     </>
   );
 }
 
-export default ContactUSComponent;
+

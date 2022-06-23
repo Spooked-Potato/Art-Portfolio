@@ -1,10 +1,10 @@
 import React from "react";
-import '../App.css';
 import NavComponent from "./NavComponent";
 import FooterComponent from "./FooterComponent";
-import  heroimage from "../Assets/img/heroimage.jpg";
+import  heroimage from "../assets/img/heroimage.jpg";
+import CardSwipper from "./CardSwipper";
 
-function HomePageComponent(){
+export default function HomePageComponent(){
     return(
         <>
         <NavComponent />
@@ -16,7 +16,10 @@ function HomePageComponent(){
             <button>Check-out</button>
         </section>
 
-       
+        <div className="card-container">
+            <CardSwipper></CardSwipper>
+        </div>
+
         <section className="about_me">
             <div className="about_me_container">
                 <div className="box">
@@ -34,4 +37,3 @@ function HomePageComponent(){
     )   
 }
 
-export default HomePageComponent;

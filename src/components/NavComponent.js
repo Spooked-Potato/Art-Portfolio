@@ -1,21 +1,24 @@
 import React from "react";
-import { Route } from "react-router-dom";
-function NavComponent() {
+import { Link } from "react-router-dom";
+export default function NavComponent() {
     return (
         <>
         <nav>
             <ul>
                 <li>
-                    Home
+                    <Link to="/">Home</Link>
                 </li>
+
                 <li>
-                    art
+                    <Link to="/myart"> My Art</Link> 
                 </li>
+                   
                 <li>
-                    contact-me
+                    <Link to="/aboutme">About-me</Link>  
                 </li>
+                
                 <li>
-                    about-me
+                    <Link to="/contact">Contact-me</Link>
                 </li>
             </ul>
         </nav>
@@ -23,4 +26,3 @@ function NavComponent() {
     );
   }
   
-  export default NavComponent;

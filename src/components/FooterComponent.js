@@ -1,6 +1,6 @@
 import React from "react";
  
-function FooterComponent(){
+export default function FooterComponent(){
     return(
         <footer>
             <ul>
@@ -17,5 +17,3 @@ function FooterComponent(){
         </footer>
     )
 }
-
-export default FooterComponent;

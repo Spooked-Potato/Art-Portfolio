@@ -8,7 +8,6 @@
 #root{
   display: flex;
   flex-direction: column;
-  
 }
 
 *,
@@ -21,14 +20,44 @@
   /* background-color: var(--main-bg-color); */
 }
 
-html body {
-  height: 100%;
-  width: 100%;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 nav {
   height: 13vh;
   width: 100%;
+  
 }
 
 nav ul {
@@ -37,7 +66,7 @@ nav ul {
   align-items: center;
   list-style-type: none;
   max-width: 100%;
-  margin: 20px;
+
   border: 2px solid;
   box-shadow: 2px 2px 10px;
 }
@@ -51,9 +80,14 @@ nav ul li {
   letter-spacing: 5px;
 }
 
+nav ul li a{
+  color: var(--second-bg-color);
+  text-decoration: none;
+}
+
 nav ul li:hover {
   color: var(--subcolor-bg-color);
-    transform: scale(110%);
+  transform: scale(110%);
   text-decoration: underline 5px var(--subcolor-bg-color);
 }
 
@@ -82,8 +116,10 @@ footer ul li {
   line-height: 10px;
 }
 
+/*HOMEPAGE*/
+
 .hero_section {
-  background: url(./Assets/img/heroimage.jpg);
+  background: url(./assets/img/heroimage.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -166,7 +202,8 @@ footer ul li {
 .about_me_container .box p span {
   font-weight: 900;
 }
-
+/*HOMEPAGE*/
+/*CONTACT-ME*/
 
 .form-section{
   width: 100%;
@@ -175,7 +212,7 @@ footer ul li {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image:url(./Assets/img/contact-me.jpg);
+  background-image:url(./assets/img/contact-me.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,4 +279,121 @@ form .details-contact .textarea-contact{
   background-color: var(--main-bg-color);
   color: var(--second-bg-color);
   transform: translateY(2px);
+}
+
+
+/*CONTACT-ME*/
+/*CARD*/
+.card-container{
+
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.cardSwiper{
+ 
+  height: 50%;
+  width: 50%;
+;
+  filter: saturate(150%);
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.600);   
+  
+}
+
+.card{
+  
+  width: 20vw;
+  filter: saturate(150%);
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.600);   
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.card:hover{
+  transition: 1s;
+  transform: translateY(-5px) scale(110%);
+}
+
+.card:hover .text{
+  opacity: 1;
+  
+}
+
+.card-houver-text{
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0,0.200);
+  box-shadow: 6px 6px 10px 7px rgba(0, 0, 0, 0.200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.card-overlay-container{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.card-overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.600);
+}
+
+.card-overlay-image{
+
+  height: 90%;
+  width: 30%;
+  filter: saturate(150%);
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*CARD*/
+
+
+
+.contact_alert {
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
