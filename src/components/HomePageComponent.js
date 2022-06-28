@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavComponent from "./NavComponent";
 import FooterComponent from "./FooterComponent";
 import  heroimage from "../assets/img/heroimage.jpg";
@@ -30,8 +31,7 @@ export default function HomePageComponent(){
                 </div>
             </div>
         </section>
-        </div>
-        
+        </div>        
         <FooterComponent/>
         </>
     )   
