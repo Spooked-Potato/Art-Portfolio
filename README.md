@@ -71,5 +71,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-site design
-https://xd.adobe.com/view/b2c08d60-ae09-4ddd-a0f1-c75edde3542f-e793/
