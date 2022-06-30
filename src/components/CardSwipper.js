@@ -16,6 +16,7 @@ export default function CardSwipper() {
         <>
             <Swiper
                 slidesPerView={3}
+                spaceBetween={10}
                 slidesPerGroup={3}
                 centeredSlides={true}
                 autoplay={{
