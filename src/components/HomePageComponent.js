@@ -2,23 +2,30 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavComponent from "./NavComponent";
 import FooterComponent from "./FooterComponent";
-import  heroimage from "../assets/img/heroimage.jpg";
+import perfil from "../assets/img/perfil.jpg"
 import CardSwipper from "./CardSwipper";
+import { Button } from "bootstrap";
 
 export default function HomePageComponent(){
     return(
         <>
         <NavComponent />
         <div>
-
+            
         <section className="hero_section">
-           <h1> Welcome to my <br></br>
-               <span>art</span></h1>
-            <button>Check-out</button>
+            <div className="overlay-hero-section">
+             <h1> Welcome<br></br>
+             to my art
+            <button>see more</button>
+             </h1>
+            </div>
         </section>
+        
 
         <div className="card-container">
+            <h2>see more</h2>
             <CardSwipper></CardSwipper>
+            <button>see more</button>
         </div>
 
         <section className="about_me">
@@ -27,7 +34,7 @@ export default function HomePageComponent(){
                     <p><span>ABOUT ME</span><br/>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div className="box">
-                    <img src={heroimage}  alt= "heroimg"/>
+                    <img src={perfil}  alt= "heroimg"/>
                 </div>
             </div>
         </section>
