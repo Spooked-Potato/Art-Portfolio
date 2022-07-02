@@ -252,32 +252,50 @@ footer ul li {
 /*HOMEPAGE*/
 
 /*CONTACT-ME*/
-.form-section {
+.form_section {
     width: 100%;
-    height: 84vh;
-    overflow: hidden;
+    height: 80vh;
+    margin-top: 13vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url();
+    background-image: url("./assets/img/background-contact.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: saturate(250%);
 }
 
-.form-section form {
-    height: 60vh;
-    width: 40%;
+.form_section_container {
+    height: 70vh;
+    width: 60%;
     display: flex;
     justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-form .details-contact {
+.form_section_container_dividor {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_me_information {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    height: auto;
+    width: 70%;
+}
+
+.about_me_information h2 {
+    text-align: center;
+}
+
+.about_me_information p {
+    text-align: center;
+}
+
+form .details_contact {
     display: flex;
     flex-direction: column;
 }
@@ -288,7 +306,7 @@ form span {
     text-align: center;
 }
 
-form .details-contact .label-contact {
+form .details_contact .label_contact {
     padding-top: 10px;
     padding-right: 0px;
     padding-bottom: 2px;
@@ -299,13 +317,11 @@ form .details-contact .label-contact {
     margin: 0 auto;
 }
 
-form .details-contact .input-contact,
-form .details-contact .textarea-contact {
-    border: 2px solid var(--second-bg-color);
+form .details_contact .input_contact,
+form .details_contact .textarea_contact {
     width: 80%;
     margin: 0 auto;
     padding: 5px;
-    border-radius: 8px;
 }
 
 .form-section form button {
