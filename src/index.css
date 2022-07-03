@@ -124,15 +124,17 @@ nav .nav-mobile-toggle {
 footer {
     background-color: var(--footercolor-bg-color);
     bottom: 0;
-}
-
-footer ul {
-    height: 100px;
     justify-content: center;
     display: flex;
     align-items: center;
-    list-style-type: none;
+    flex-direction: column;
     height: 150px;
+}
+
+footer ul {
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
     width: 100%;
 }
 
@@ -197,8 +199,7 @@ footer ul li {
 }
 
 .homepage_card_container {
-    height: auto;
-    margin-top: 13vh;
+    height: 90vh;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -283,27 +284,42 @@ footer ul li {
 .about_me_information {
     background-color: var(--main-bg-color);
     padding: 20px;
-    height: auto;
-    width: 70%;
-}
-
-.about_me_information h2 {
-    text-align: center;
-}
-
-.about_me_information p {
-    text-align: center;
-}
-
-form .details_contact {
+    height: 60%;
+    width: 90%;
     display: flex;
+    align-content: center;
     flex-direction: column;
 }
 
-form span {
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
+.about_me_information h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.about_me_information a {
+    text-align: left;
+    text-decoration: none;
+    color: var(--second-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.about_me_information a:hover {
+    color: var(--subcolor-bg-color);
+    text-decoration: underline;
+}
+
+form {
+    padding: 20px;
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 form .details_contact .label_contact {
@@ -317,29 +333,28 @@ form .details_contact .label_contact {
     margin: 0 auto;
 }
 
-form .details_contact .input_contact,
-form .details_contact .textarea_contact {
-    width: 80%;
+form .details_contact .textarea_contact,
+form .details_contact .input_contact {
+    width: 100%;
     margin: 0 auto;
     padding: 5px;
 }
 
-.form-section form button {
-    width: 30%;
-    margin: 0 auto;
-    background-color: var(--subcolor-bg-color);
+.form_section_container_dividor form button {
+    width: 100%;
     color: var(--main-bg-color);
-    font-weight: 500;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 15px;
-    border: 2px solid var(--second-bg-color);
+    background-color: var(--subcolor-bg-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 3.5px;
 }
-.form-section form button:hover {
+
+.form_section_container_dividor form button:hover {
+    color: var(--subcolor-bg-color);
     background-color: var(--main-bg-color);
-    color: var(--second-bg-color);
-    transform: translateY(2px);
+    font-weight: 600;
 }
 
 .contact_alert {
@@ -348,11 +363,49 @@ form .details_contact .textarea_contact {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--black2);
-
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact_box_alert {
+    width: 40%;
+    height: 20%;
+    z-index: 10;
+    display: flex;
+    border: 5px solid var(--second-bg-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+}
+
+.contact_box_alert h2 {
+    padding: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--second-bg-color);
+}
+
+.contact_box_alert button {
+    width: 25%;
+    color: var(--main-bg-color);
+    background-color: var(--subcolor-bg-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 3.5px;
+    border: 2px solid var(--subcolor-bg-color);
+}
+
+.contact_box_alert button:hover {
+    color: var(--subcolor-bg-color);
+    border: 2px solid var(--subcolor-bg-color);
+    background-color: var(--main-bg-color);
+    font-weight: 600;
 }
 
 /*CONTACT-ME*/

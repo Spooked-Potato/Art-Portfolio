@@ -13,10 +13,31 @@ export default function ContactUSComponent() {
                 <div className="form_section_container">
                     <div className="form_section_container_dividor">
                         <div className="about_me_information">
-                            <h2>test</h2>
-                            <p>test</p>
-                            <h2>test</h2>
-                            <p>test</p>
+                            <h2>Need Help?</h2>
+                            <a
+                                href="https://www.google.com/maps/place/Portim%C3%A3o/@37.1801418,-8.6053192,12z/data=!3m1!4b1!4m5!3m4!1s0xd1b28eca9242961:0x93fcc923718014e1!8m2!3d37.1361666!4d-8.5377073"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                xxxxx-xxxx-xxxx
+                                <br /> xxxxx-xxx-xxx <br />
+                                0000-000 Portimão
+                            </a>
+                            <h2>GENERAL INFORMATION </h2>
+                            <a
+                                href="tel:999999999"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                TEL: (+351) 999 999 999 <br />
+                            </a>
+                            <a
+                                href="mailto:xx@xx.com"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Email: xx@xxx.com
+                            </a>
                         </div>
                     </div>
                     <div className="form_section_container_dividor">
@@ -51,6 +72,7 @@ export default function ContactUSComponent() {
                                     className="textarea_contact"
                                     placeholder="Leave here what you are looking for?"
                                     name="comment"
+                                    rows="5"
                                     required
                                 ></textarea>
                             </div>
@@ -65,24 +87,15 @@ export default function ContactUSComponent() {
                     </div>
                 </div>
             </section>
-
-            {aberto ? (
-                <section className="contact_alert" id="contact_alert">
-                    <div className="contact_box">
-                        <h1 className="text_2xl">
-                            Your message was sent successfully
-                        </h1>
-                        <p className="mb_2 mt_4">Click "here" to go back</p>
-                        <button
-                            className="mt_4"
-                            onClick={() => setAberto(false)}
-                        >
-                            Here
-                        </button>
-                    </div>
-                </section>
-            ) : null}
             <FooterComponent />
+            {aberto ? (
+                <div className="contact_alert" id="contact_alert">
+                    <div className="contact_box_alert">
+                        <h2>Your message was sent successfully</h2>
+                        <button onClick={() => setAberto(false)}>OK</button>
+                    </div>
+                </div>
+            ) : null}
         </>
     );
 }
