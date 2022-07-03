@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/nav.png";
 export default function FooterComponent() {
     return (
         <footer>
-            <div className="logo_footer"></div>
+            <img src={logo} alt="logo" />
+
             <ul>
                 <li>
                     <Link to="/">Home</Link>
