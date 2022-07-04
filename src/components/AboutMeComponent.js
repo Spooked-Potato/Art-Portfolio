@@ -3,6 +3,7 @@ import "../App.css";
 import NavComponent from "./NavComponent";
 import FooterComponent from "./FooterComponent";
 import perfil from "../assets/img/perfil.jpg";
+import { Link } from "react-router-dom";
 
 export default function AboutMeComponent() {
     return (
@@ -28,8 +29,12 @@ export default function AboutMeComponent() {
                             Lorem Ipsum.
                         </p>
                         <div className="about_me_buttons">
-                            <button>My Art</button>
-                            <button>Contact-Me</button>
+                            <button>
+                                <Link to="/myart">My Art</Link>
+                            </button>
+                            <button>
+                                <Link to="/contact">Contact</Link>
+                            </button>
                         </div>
                     </div>
                     <div id="second_box">

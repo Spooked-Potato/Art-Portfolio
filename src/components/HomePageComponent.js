@@ -6,6 +6,7 @@ import CardSwipper from "./CardSwipper";
 import person from "../assets/img/person.svg";
 import brush from "../assets/img/brush.svg";
 import phone from "../assets/img/phone.svg";
+import { Link } from "react-router-dom";
 
 export default function HomePageComponent() {
     return (
@@ -17,7 +18,9 @@ export default function HomePageComponent() {
                         <h1>
                             Welcome<br></br>
                             to my art
-                            <button>see more</button>
+                            <button>
+                                <Link to="/myart">Check-out</Link>
+                            </button>
                         </h1>
                     </div>
                 </section>
@@ -46,7 +49,9 @@ export default function HomePageComponent() {
                                 specimen book.
                             </p>
 
-                            <button>Read more</button>
+                            <button>
+                                <Link to="/aboutme">Read More</Link>
+                            </button>
                         </div>
                         <div className="box">
                             <img src={perfil} alt="heroimg" />
@@ -57,17 +62,17 @@ export default function HomePageComponent() {
                 <section className="icon_container">
                     <div className="icons">
                         <img src={person} alt="heroimg" />
-                        <p>test</p>
+                        <p>In person selling</p>
                     </div>
 
                     <div className="icons">
                         <img src={brush} alt="heroimg" />
-                        <p>test</p>
+                        <p>Made with paint</p>
                     </div>
 
                     <div className="icons">
                         <img src={phone} alt="heroimg" />
-                        <p>test</p>
+                        <p>Contact-me any time</p>
                     </div>
                 </section>
             </div>

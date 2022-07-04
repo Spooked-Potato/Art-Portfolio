@@ -11,7 +11,6 @@ export default function ContactUSComponent() {
             <NavComponent />
             <section className="form_section">
                 <div className="form_section_container">
-                    <h1>contact-me</h1>
                     <div className="form_section_container_dividor">
                         <div className="about_me_information">
                             <h2>Need Help?</h2>

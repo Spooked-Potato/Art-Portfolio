@@ -9,7 +9,7 @@ export default function NavComponent() {
 
     return (
         <>
-            <nav style={menuOpen ? { minHeight: "13vh" } : { height: "13vh" }}>
+            {/* <nav style={menuOpen ? { minHeight: "13vh" } : { height: "13vh" }}>
                 <div className="logo">
                     <img
                         src={logo}
@@ -72,6 +72,29 @@ export default function NavComponent() {
                 >
                     <img src={menuOpen ? closeMenu : OpenMenu} alt="nav menu" />
                 </div>
+            </nav> */}
+
+            <nav>
+                <div className="logo">
+                <img src={logo} alt="logo" />
+                </div>
+                <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/myart"> My Art</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/aboutme">About-me</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/contact">Contact-me</Link>
+                        </li>
+                </ul>
             </nav>
         </>
     );

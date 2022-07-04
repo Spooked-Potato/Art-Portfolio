@@ -6,7 +6,7 @@ export const data = [
 
     {
         id: 2,
-        image: require("../assets/img/pinceis.jpg"),
+        image: require("../assets/img/bird.jpg"),
     },
 
     {
