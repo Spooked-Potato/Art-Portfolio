@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project has a missing folder with images as such add your own images to make it work
+
 ## Available Scripts
 
 In the project directory, you can run:
